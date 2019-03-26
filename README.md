@@ -1,4 +1,9 @@
-# URL parameters
+# WWTBAM HUD
+HUD element display using PHP GD, for use in virtual platforms such as [Active Worlds](https://activeworlds.com/) or [Virtual Paradise](https://virtualparadise.org/).
+
+This repository only contains the scripts necessary to display the graphics. The graphics themselves are not provided for legal protection.
+
+## URL parameters
 
 All parameters are optional.
 
