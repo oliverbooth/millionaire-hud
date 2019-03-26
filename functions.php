@@ -38,22 +38,4 @@ function fatal_error($str) {
         exit;
     }
 }
-
-function hex2rgb($hex) {
-    while (strpos($hex, "#") === 0) {
-        $hex = substr($hex, 1);
-    }
-
-    $r = 0;
-    $g = 0;
-    $b = 0;
-
-    if (strlen($hex) === 3) {
-        list($r, $g, $b) = sscanf($hex, "%01x%01x%01x");
-    } else if (strlen($hex) === 6) {
-        list($r, $g, $b) = sscanf($hex, "%02x%02x%02x");
-    }
-    
-    return array("r" => $r, "g" => $g, "b" => $b);
-}
 ?>
