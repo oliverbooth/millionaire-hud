@@ -13,7 +13,7 @@ $n    = intval($_GET["n"] ?? 1);
 $k    = substr($_GET["k"] ?? "", 0, 1);
 // ---
 
-$src_img_file = "millionaire{$n}-{$k}.png";
+$src_img_file = "millionaire{$n}-{$k}.".EXTENSION;
 $font_file = __DIR__."/{$font}.TTF";
 
 if (!is_readable($src_img_file)) {
