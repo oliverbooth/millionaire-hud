@@ -1,6 +1,10 @@
 <?php
 require_once("functions.php");
 
+if (!supports_gd()) {
+    fatal_error("GD not supported");
+}
+
 use GDText\Box;
 use GDText\Color;
 
